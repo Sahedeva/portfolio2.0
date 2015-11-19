@@ -39,14 +39,31 @@ a {
   background-color: brown;
 }*/
 
+.project_screenshots {
+  height: 200px;
+  width: 365px;
+  padding-bottom: 10px;
+}
+
+#projects_ul {
+  list-style-type: none;
+}
+
+.projects_links {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
 @media (min-width: 768px) {
-  #contact_page, #home_page, #about_page {
+  #contact_page, #home_page, #about_page, #projects_page {
       width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  #contact_page, #home_page, #about_page {
+  #contact_page, #home_page, #about_page, #projects_page {
       width: 970px;
   }
 }
@@ -54,6 +71,20 @@ a {
 #contact_page, #home_page, #about_page {
   margin-top: 8px;
   background: rgba(204, 204, 204, 0.5);
+}
+
+#projects_page {
+  margin-top: -45px;
+  background: rgba(204, 204, 204, 0.5);
+}
+
+#projects_container {
+  text-align: center;
+  background: url("/images/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: helvetica;
 }
 
 #about_container {
@@ -64,6 +95,7 @@ a {
   color: white;
   font-family: helvetica;
 }
+
 #about_p {
   font-size: 22px;
 }

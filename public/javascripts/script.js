@@ -24,6 +24,12 @@
                 templateUrl : 'contact.ejs',
                 controller  : 'contactController'
             })
+
+            // route for the projects page
+            .when('/projects', {
+                templateUrl : 'projects.ejs',
+                controller  : 'projectController'
+            })
     });
 
     // create the controller and inject Angular's $scope
@@ -39,4 +45,8 @@
 
     portfolioApp.controller('contactController', function($scope) {
         $scope.message = 'Contact us! JK. This is just a demo.';
+    });
+
+    portfolioApp.controller('projectsController', function($scope) {
+        $scope.message = 'Projects page';
     });
