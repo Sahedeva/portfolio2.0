@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="UTF-8">
+<title><%= title %></title>
+<!-- Bootstrap CSS (load from a CDN) -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!-- load in personal stylesheet -->
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<!-- jQuery (load from a CDN) -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.min.js"></script>
+  </head>
+<body>
+<div id="about_container">
+  <img id="hero_img" src="../public/images/hero.jpg">
+  <p id="about_p">Greetings. I am Bob Weilbaecher - a Austin based web designer. Say hello!</p>
+  <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+  <ul id="about_ul">
+    <li>I am an ER doctor in career transition</li>
+    <li>I enjoy cross-fit high intensity exercise and martial arts</li>
+    <li>I take pleasure in playing involved board games - like Arkham Horror</li>
+    <li>I love Clasic Sci-fi and prefer old fashioned special effects and models to CGI</li>
+    <li>I would love to go to Mars</li>
+    <li>Pulling all nighters to get the job done is my speciality</li>
+    <li>I am a coding Ninja</li>
+    <img src="http://1.viki.io/d/1863c/8b75dc48c9.gif" />
+</div>
+</body>
+</html>
