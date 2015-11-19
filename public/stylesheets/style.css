@@ -28,7 +28,7 @@ a {
   color: black;
 }
 
-#about_page {
+/*#about_page {
   width:100%;
   background-color: brown;
   opacity:0.6;
@@ -37,21 +37,21 @@ a {
 #home_page {
   width:100%;
   background-color: brown;
-}
-
-@media (min-width: 992px) {
-  #contact_page {
-      width: 970px;
-  }
-}
+}*/
 
 @media (min-width: 768px) {
-  #contact_page {
+  #contact_page, #home_page, #about_page {
       width: 750px;
   }
 }
 
-#contact_page {
+@media (min-width: 992px) {
+  #contact_page, #home_page, #about_page {
+      width: 970px;
+  }
+}
+
+#contact_page, #home_page, #about_page {
   margin-top: 8px;
   background: rgba(204, 204, 204, 0.5);
 }
