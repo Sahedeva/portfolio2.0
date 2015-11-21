@@ -58,15 +58,37 @@ a {
 }
 
 @media (min-width: 768px) {
+  #nav_saber {
+    margin-right:4%;
+  }
+
   #contact_page, #home_page, #about_page, #projects_page {
       width: 750px;
   }
 }
 
 @media (min-width: 992px) {
+  #nav_saber {
+    margin-right:14%;
+  }
+
   #contact_page, #home_page, #about_page, #projects_page {
       width: 970px;
   }
+}
+
+@media (min-width: 1190px) {
+  #nav_saber {
+    margin-right:21%;
+  }
+
+  #contact_page, #home_page, #about_page, #projects_page {
+      width: 1170px;
+  }
+}
+
+#nav_home, #nav_about, #nav_contact, #nav_artwork, #nav_projects, #nav_resume {
+  color: #2639D8;
 }
 
 #contact_page, #home_page, #about_page {
