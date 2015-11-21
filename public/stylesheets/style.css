@@ -17,6 +17,7 @@ a {
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   position: fixed;
+  border-radius: 20px;
   top: 0px;
 }
 
