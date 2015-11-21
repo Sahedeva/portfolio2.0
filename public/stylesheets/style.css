@@ -81,7 +81,7 @@ a {
     margin-right:4%;
   }
 
-  #contact_page, #home_page, #about_page, #projects_page {
+  #contact_page, #home_page, #about_page, #projects_page, #artwork_page {
       width: 750px;
   }
 }
@@ -91,7 +91,7 @@ a {
     margin-right:14%;
   }
 
-  #contact_page, #home_page, #about_page, #projects_page {
+  #contact_page, #home_page, #about_page, #projects_page, #artwork_page {
       width: 970px;
   }
 }
@@ -101,7 +101,7 @@ a {
     margin-right:21%;
   }
 
-  #contact_page, #home_page, #about_page, #projects_page {
+  #contact_page, #home_page, #about_page, #projects_page, #artwork_page {
       width: 1170px;
   }
 }
