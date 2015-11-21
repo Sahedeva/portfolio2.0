@@ -30,6 +30,12 @@
                 templateUrl : 'projects.ejs',
                 controller  : 'projectController'
             })
+
+            // route for the artwork page
+            .when('/artwork', {
+                templateUrl : 'artwork.ejs',
+                controller  : 'artworkController'
+            })
     });
 
     // create the controller and inject Angular's $scope
@@ -45,6 +51,10 @@
 
     portfolioApp.controller('contactController', function($scope) {
         $scope.message = 'Contact us! JK. This is just a demo.';
+    });
+
+    portfolioApp.controller('artworkController', function($scope) {
+        $scope.message = 'Artwork page';
     });
 
     portfolioApp.controller('projectsController', function($scope) {

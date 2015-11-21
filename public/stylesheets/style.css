@@ -47,7 +47,25 @@ a {
   padding-bottom: 10px;
 }
 
-#projects_ul {
+#artwork_1image {
+  height: 300px;
+  width: 177px;
+  padding-bottom: 10px;
+}
+
+#artwork_2image {
+  height: 300px;
+  width: 133px;
+  padding-bottom: 10px;
+}
+
+#artwork_3image {
+  height: 300px;
+  width: 585px;
+  padding-bottom: 10px;
+}
+
+#projects_ul, #artwork_ul {
   list-style-type: none;
 }
 
@@ -92,7 +110,7 @@ a {
   color: #2639D8;
 }
 
-#contact_page, #home_page, #about_page {
+#contact_page, #home_page, #about_page, #artwork_page {
   margin-top: 8px;
   background: rgba(204, 204, 204, 0.5);
 }
