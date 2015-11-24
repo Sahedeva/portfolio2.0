@@ -602,6 +602,10 @@ a {
 
 .artwork_list {
   display: inline;
+  max-height: 300px;
+  width: auto;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 #artwork_ul {
@@ -614,7 +618,9 @@ a {
 
 .projects_links {
   color: green;
-  font-size: 18px;
+  text-shadow: 1px 1px 1px black;
+  font-size: 22px;
+  font-family: "Arial Black", Gadget, sans-serif;
   font-weight: bold;
   padding-bottom: 10px;
 }
