@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-// var User = require('../models/user'); // get our mongoose model
-// var Artwork = require('../models/artwork');
-// var Project = require('../models/project');
+var User = require('../models/user'); // get our mongoose model
+var Artwork = require('../models/artwork');
+var Project = require('../models/project');
 var mongoose = require('mongoose');
 
 /* GET home page. */
