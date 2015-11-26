@@ -2,9 +2,8 @@ var mongoose = require('mongoose');
 
 var artworkSchema = new mongoose.Schema({
   url: String,
-  height: Number,
-  width: Number,
-  like: Number,
+  likes: Number,
+  genre: String,
   created_at: Date,
   updated_at: Date
 });

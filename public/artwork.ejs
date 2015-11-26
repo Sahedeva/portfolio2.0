@@ -1,8 +1,17 @@
-<div id="artwork_page" class="jumbotron text-center">
-	<div id="artwok_container">
+<div ng-controller="artworkController" id="artwork_page" class="jumbotron text-center">
+	<div id="artwork_container">
 	  <h2 id="artwork_p">"Live your life as a work of art" - Friedrich Nietzsche</h2>
 	  <ul id="artwork_ul">
-	    <li class="artwork_list"><img id="artwork_1image" src="/images/Artwork/IMG_1.jpg" /></li>
+	  	<h3 id="artwork_p">Test for Angular likes</h3>
+	  	<div ng-repeat="artwork in artworks | orderBy:'-likes'">
+        <span class="glyphicon glyphicon-thumbs-up"
+          ng-click="incrementLikes(artwork)"></span>
+        {{artwork['likes']}}
+        <span style="font-size:20px; margin-left:10px;">
+          <li class="artowork_list"><img class="artwork_images" src="{{artwork['url']}}" /></li>
+        </span>
+      </div>
+	    <!-- <li class="artwork_list"><img id="artwork_1image" src="/images/Artwork/IMG_1.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_2image" src="/images/Artwork/IMG_2.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_3image" src="/images/Artwork/IMG_3.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_4image" src="/images/Artwork/IMG_4.jpg" /></li>
@@ -80,7 +89,7 @@
 	    <li class="artwork_list"><img id="artwork_76image" src="/images/Artwork/IMG_76.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_77image" src="/images/Artwork/IMG_77.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_78image" src="/images/Artwork/IMG_78.jpg" /></li>
-	    <li class="artwork_list"><img id="artwork_79image" src="/images/Artwork/IMG_79.jpg" /></li>
+	    <li class="artwork_list"><img id="artwork_79image" src="/images/Artwork/IMG_79.jpg" /></li> -->
 	  </ul>
 	</div>
 </div>

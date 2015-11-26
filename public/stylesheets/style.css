@@ -600,12 +600,15 @@ a {
   padding-bottom: 10px;
 }
 
-.artwork_list {
-  display: inline;
+.artwork_images {
   max-height: 300px;
   width: auto;
   padding-right: 10px;
   padding-bottom: 10px;
+}
+
+.artwork_list {
+  display: inline;
 }
 
 #artwork_ul {
