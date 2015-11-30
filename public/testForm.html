@@ -1,0 +1,15 @@
+<div ng-controller="testFormController" id="testForm_page" class="jumbotron text-center">
+	<div>
+      {{test}}
+  </div>
+  <div ng-repeat="post in posts | orderBy: '-upvotes'">
+    {{post.title}} - upvotes: {{post.upvotes}}
+  <!-- <form ng-submit="addPost(post)"> -->
+  	<div ng-repeat="comment in post.comments">
+  		{{comment.comment}}
+  	</div>
+    <input type="text" ng-model="comment.comment"></input>
+    <button ng-click="addComment(post)">Add</button>
+  </div> 
+  
+</div>

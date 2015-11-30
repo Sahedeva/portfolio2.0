@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="portfolioApp">
+<html>
 <head>
 <meta charset="UTF-8">
 <title><%= title %></title>
@@ -16,7 +16,7 @@
 <script src="/javascripts/script.js"></script>
 <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
-<body ng-controller="mainController">
+<body ng-app="portfolioApp" ng-controller="mainController">
 
 <!-- HEADER AND NAVBAR -->
   <header>
@@ -27,11 +27,14 @@
         <ul id="nav_saber" class="nav navbar-nav navbar-right">
             <li><a id="nav_home" href="#"><!-- <i class="fa fa-home"></i> -->Home</a></li>
             <li><a id="nav_about" href="#about"><!-- <i class="fa fa-shield"></i>  -->About Me</a></li>
-            <li><a id="nav_contact" href="#contact"><!-- <i class="fa fa-comment"></i>  -->Contact</a></li>
-            <li><a id="nav_artwork" href="#artwork">Artwork</a></li>
             <li><a id="nav_projects" href="#projects">Projects</a></li>
-    <!-- resume direct links to pdf of resume -->
             <li><a id="nav_resume" href="images/resume.pdf" target="_blank">Resume</a></li>
+            <li><a id="nav_artwork" href="#artwork">Artwork</a></li>
+            <li><a id="nav_contact" href="#contact"><!-- <i class="fa fa-comment"></i>  -->Contact</a></li>
+            
+            
+    <!-- resume direct links to pdf of resume -->
+            
         </ul>
     </div>
     </nav>
@@ -42,7 +45,7 @@
         
         <!-- angular templating -->
         <!-- this is where content will be injected -->
-        <div ng-view>{{message}}</div>
+        <div ng-view></div>
     </div>
 </body>
 </html>

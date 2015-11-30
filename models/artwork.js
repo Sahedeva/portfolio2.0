@@ -4,6 +4,7 @@ var artworkSchema = new mongoose.Schema({
   url: String,
   likes: Number,
   genre: String,
+  comments: Array,
   created_at: Date,
   updated_at: Date
 });

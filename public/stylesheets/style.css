@@ -1,9 +1,15 @@
+/* styling for main template */
+/* background image */
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url(http://8bitnerds.com/wp-content/uploads/2014/12/Jedi-Kittens-Fight-Mouse-with-Lightsaber.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+
+#nav_home, #nav_about, #nav_contact, #nav_artwork, #nav_projects, #nav_resume {
+  color: #2639D8;
 }
 
 a {
@@ -26,597 +32,91 @@ a {
   border-radius: 20px;
 }
 
-#about_name {
-  color: black;
-}
-
-/*#about_page {
-  width:100%;
-  background-color: brown;
-  opacity:0.6;
-}
-
+/* home template */
 #home_page {
-  width:100%;
-  background-color: brown;
-}*/
+  margin-top: 8px;
+  background: rgba(204, 204, 204, 0.7);
+}
+
+#home_container {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: helvetica;
+}
+
+#home_p {
+  color: blue;
+  font-size: 44px;
+  padding-top: 10px;
+}
+
+#home_name {
+  color: black;
+  font-size: 24px;
+}
+
+.home_input {
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+.home_input[type="submit"] {
+  background: red;
+  color: white;
+}
+
+#home_a {
+  font-size: 22px;
+  color: brown;
+}
+
+/* about template */
+#about_page {
+  margin-top: 8px;
+  background: rgba(204, 204, 204, 0.5);
+}
+
+#about_fun_facts {
+  text-align: center;
+  background: url("http://i.space.com/images/i/000/022/287/i02/carina-clouds-1600.jpg?1348875273");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: helvetica;
+}
+
+#about_ul {
+  text-align: left;
+  color:violet;
+  text-shadow: 1px 1px 1px black;
+  font-size: 20px;
+}
+
+/* project template */
+#projects_page {
+  margin-top: -45px;
+  background: rgba(204, 204, 204, 0.5);
+}
+
+#projects_container {
+  text-align: center;
+  background: url("/images/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: helvetica;
+}
+
+#projects_ul{
+  list-style-type: none;
+}
 
 .project_screenshots {
   height: 200px;
   width: 365px;
   padding-bottom: 10px;
-}
-
-#artwork_1image {
-  height: 300px;
-  width: 238px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_2image {
-  height: 300px;
-  width: 233px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_3image {
-  height: 300px;
-  width: 245px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_4image {
-  height: 300px;
-  width: 414px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_5image {
-  height: 300px;
-  width: 292px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_6image {
-  height: 300px;
-  width: 244px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_7image {
-  height: 300px;
-  width: 248px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_8image {
-  height: 300px;
-  width: 240px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_9image {
-  height: 300px;
-  width: 406px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_10image {
-  height: 300px;
-  width: 231px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_11image {
-  height: 300px;
-  width: 236px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_12image {
-  height: 300px;
-  width: 226px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_13image {
-  height: 300px;
-  width: 233px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_14image {
-  height: 300px;
-  width: 240px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_15image {
-  height: 300px;
-  width: 242px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_16image {
-  height: 300px;
-  width: 231px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_17image {
-  height: 300px;
-  width: 229px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_18image {
-  height: 300px;
-  width: 229px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_19image {
-  height: 300px;
-  width: 406px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_20image {
-  height: 300px;
-  width: 234px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_21image {
-  height: 300px;
-  width: 234px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_22image {
-  height: 300px;
-  width: 237px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_23image {
-  height: 300px;
-  width: 239px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_24image {
-  height: 300px;
-  width: 238px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_25image {
-  height: 300px;
-  width: 219px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_26image {
-  height: 300px;
-  width: 219px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_27image {
-  height: 300px;
-  width: 198px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_28image {
-  height: 300px;
-  width: 240px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_29image {
-  height: 300px;
-  width: 244px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_30image {
-  height: 300px;
-  width: 248px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_31image {
-  height: 300px;
-  width: 250px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_32image {
-  height: 300px;
-  width: 269px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_33image {
-  height: 300px;
-  width: 224px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_34image {
-  height: 300px;
-  width: 228px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_35image {
-  height: 300px;
-  width: 240px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_36image {
-  height: 300px;
-  width: 249px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_37image {
-  height: 300px;
-  width: 407px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_38image {
-  height: 300px;
-  width: 411px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_39image {
-  height: 300px;
-  width: 225px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_40image {
-  height: 300px;
-  width: 212px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_41image {
-  height: 300px;
-  width: 394px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_42image {
-  height: 300px;
-  width: 217px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_43image {
-  height: 300px;
-  width: 427px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_44image {
-  height: 300px;
-  width: 413px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_45image {
-  height: 300px;
-  width: 412px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_46image {
-  height: 300px;
-  width: 420px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_47image {
-  height: 300px;
-  width: 405px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_48image {
-  height: 300px;
-  width: 240px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_49image {
-  height: 300px;
-  width: 227px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_50image {
-  height: 300px;
-  width: 234px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_51image {
-  height: 300px;
-  width: 382px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_52image {
-  height: 300px;
-  width: 390px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_53image {
-  height: 300px;
-  width: 241px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_54image {
-  height: 300px;
-  width: 382px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_55image {
-  height: 300px;
-  width: 405px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_56image {
-  height: 300px;
-  width: 386px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_57image {
-  height: 300px;
-  width: 400px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_58image {
-  height: 300px;
-  width: 419px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_59image {
-  height: 300px;
-  width: 389px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_60image {
-  height: 300px;
-  width: 413px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_61image {
-  height: 300px;
-  width: 233px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_62image {
-  height: 300px;
-  width: 229px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_63image {
-  height: 300px;
-  width: 414px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_64image {
-  height: 300px;
-  width: 417px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_65image {
-  height: 300px;
-  width: 418px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_66image {
-  height: 300px;
-  width: 409px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_67image {
-  height: 300px;
-  width: 408px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_68image {
-  height: 300px;
-  width: 427px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_69image {
-  height: 300px;
-  width: 417px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_70image {
-  height: 300px;
-  width: 237px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_71image {
-  height: 300px;
-  width: 240px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_72image {
-  height: 300px;
-  width: 420px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_73image {
-  height: 300px;
-  width: 443px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_74image {
-  height: 300px;
-  width: 436px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_75image {
-  height: 300px;
-  width: 402px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_76image {
-  height: 300px;
-  width: 402px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_77image {
-  height: 300px;
-  width: 224px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_78image {
-  height: 300px;
-  width: 224px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-#artwork_79image {
-  height: 300px;
-  width: 224px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-.artwork_images {
-  max-height: 300px;
-  width: auto;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-.artwork_list {
-  display: inline;
-}
-
-#artwork_ul {
-  text-align: left;
-}
-
-#projects_ul, #artwork_ul {
-  list-style-type: none;
 }
 
 .projects_links {
@@ -628,6 +128,102 @@ a {
   padding-bottom: 10px;
 }
 
+
+/* artwork template */
+#artwork_page {
+  margin-top: 8px;
+  background: rgba(184, 122, 66, 1);
+}
+
+#artwork_ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+.artwork_comments{
+  color: yellow;
+  text-shadow: 1px 1px 1px black;
+}
+
+.artwork_genre {
+  color: pink;
+  text-shadow: 1px 1px 1px black;
+}
+
+.artwork_images {
+  max-height: 300px;
+  width: auto;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.like_col, .artwork_col, .comment_col {
+  float: left;
+}
+
+.like_col {
+  width: 25%;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: purple;
+}
+
+.artwork_col {
+  width: 50%;
+  text-align: center
+}
+
+.comment_col {
+  width: 25%;
+  margin-top: 75px;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.artwork_list {
+  display: inline;
+}
+
+#like_div {
+  display: inline;
+  margin-top: 75px;
+}
+
+.like_button {
+  max-height: 40px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.comment_list {
+  color: black;
+/*  text-shadow: 1px 1px 1px black;*/
+  font-size: 18px;
+}
+.add_buttons {
+  margin-left: 7%;
+  margin-top: 5%;
+}
+
+.add_button {
+  max-height: 22px;
+  width: auto;
+  border-radius: 10px;
+}
+
+/* Contact template */
+#contact_page {
+  margin-top: 8px;
+  background: rgba(204, 204, 204, 0.5);
+}
+
+/* media definitions */
 @media (min-width: 768px) {
   #nav_saber {
     margin-right:4%;
@@ -658,56 +254,57 @@ a {
   }
 }
 
-#nav_home, #nav_about, #nav_contact, #nav_artwork, #nav_projects, #nav_resume {
-  color: #2639D8;
+/* sprite experiment for fun */
+.sprite {
+  width: 102px;
+  height: 148px;
+  margin-top: 40px;
 }
 
-#contact_page, #home_page, #about_page, #artwork_page {
-  margin-top: 8px;
-  background: rgba(204, 204, 204, 0.5);
+.right {
+  background-image: url(http://atomicrobotdesign.com/blog_media/css-sprite/standing-right.png);
 }
 
-#projects_page {
-  margin-top: -45px;
-  background: rgba(204, 204, 204, 0.5);
+.left {
+  background-image: url(http://atomicrobotdesign.com/blog_media/css-sprite/standing-left.png);
 }
 
-#projects_container {
-  text-align: center;
-  background: url("/images/ocean.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  font-family: helvetica;
+.walk-right {
+  background-image: url(http://atomicrobotdesign.com/blog_media/css-sprite/walk-right.png);
+  -webkit-animation: walk .9s steps(6) infinite;
+  -moz-animation: walk .9s steps(6) infinite;
+  -ms-animation: walk .9s steps(6) infinite;
+  -o-animation: walk .9s steps(6) infinite;
+  animation: walk .9s steps(6) infinite;
 }
 
-#about_container {
-  text-align: center;
-  background: url("http://i.space.com/images/i/000/022/287/i02/carina-clouds-1600.jpg?1348875273");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  font-family: helvetica;
+.walk-left {
+  background-image: url(http://atomicrobotdesign.com/blog_media/css-sprite/walk-left.png);
+  -webkit-animation: walk .9s steps(6) infinite;
+  -moz-animation: walk .9s steps(6) infinite;
+  -ms-animation: walk .9s steps(6) infinite;
+  -o-animation: walk .9s steps(6) infinite;
+  animation: walk .9s steps(6) infinite;
 }
 
-#about_p {
-  font-size: 22px;
+@-webkit-keyframes walk {
+  from { background-position: 0px; }
+  to { background-position: -612px; }
 }
-.about_input {
-  border: 0;
-  padding: 10px;
-  font-size: 18px;
+@-moz-keyframes walk {
+  from { background-position: 0px; }
+  to { background-position: -612px; }
 }
-.about_input[type="submit"] {
-  background: red;
-  color: white;
+@-ms-keyframes walk {
+  from { background-position: 0px; }
+  to { background-position: -612px; }
 }
-#about_ul {
-  text-align: left;
-  color:violet;
-  font-size: 20px;
+@-o-keyframes walk {
+  from { background-position: 0px; }
+  to { background-position: -612px; }
 }
-#about_a {
-  font-size: 22px;
-  color: brown;
+@-keyframes walk {
+  from { background-position: 0px; }
+  to { background-position: -612px; }
 }
+

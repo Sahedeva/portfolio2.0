@@ -1,16 +1,39 @@
 <div ng-controller="artworkController" id="artwork_page" class="jumbotron text-center">
 	<div id="artwork_container">
 	  <h2 id="artwork_p">"Live your life as a work of art" - Friedrich Nietzsche</h2>
-	  <ul id="artwork_ul">
-	  	<h3 id="artwork_p">Test for Angular likes</h3>
+	  <ul class="list-inline" id="artwork_ul">
 	  	<div ng-repeat="artwork in artworks | orderBy:'-likes'">
-        <span class="glyphicon glyphicon-thumbs-up"
-          ng-click="incrementLikes(artwork)"></span>
-        {{artwork['likes']}}
-        <span style="font-size:20px; margin-left:10px;">
-          <li class="artowork_list"><img class="artwork_images" src="{{artwork['url']}}" /></li>
-        </span>
+	  		<div class="grid">
+	  			<div class="like_col">
+	  				<img class="like_button" ng-click="incrementLikes(artwork)" src="/images/like1.jpg"> {{artwork['likes']}}
+	  			</div>
+	  			<div class="artwork_col">
+	          <li class="artwork_list"><div><h3 class="artwork_genre">{{artwork['genre']}}</h3><!-- <h4>{{artwork['url'].substring(20)}}</h4> --><img class="artwork_images" src="{{artwork['url']}}" /></div></li>
+          </div>
+          <div class="comment_col">
+	          <h3 class="artwork_comments">Comments</h3>
+	          	<div class="comment_list" ng-repeat="comment in artwork.comments">
+	          		{{comment}}
+	          	</div>
+	          <div class="form-group">
+          		<form ng-submit="addComment(artwork, new_comment)" style="margin-top:30px;">
+				      	<input type="text" class="form-control" placeholder="Comment" ng-model="new_comment"></input>
+				    		<button type="submit" class="btn btn-primary add_buttons"><img class="add_button" src="/images/add.png"></button>
+				  		</form>
+          	</div>
+    			</div>
+        </div>
       </div>
+    </ul>
+	</div>
+</div>
+          	
+				    
+ 
+
+<!-- <span style="font-size:20px; margin-left:10px;">
+          <li class="artowork_list"><h3>{{artwork['genre']}}</h3><h4>{{artwork['url'].substring(20)}}</h4><img class="artwork_images" src="{{artwork['url']}}" /></li>
+        </span> -->
 	    <!-- <li class="artwork_list"><img id="artwork_1image" src="/images/Artwork/IMG_1.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_2image" src="/images/Artwork/IMG_2.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_3image" src="/images/Artwork/IMG_3.jpg" /></li>
@@ -90,6 +113,3 @@
 	    <li class="artwork_list"><img id="artwork_77image" src="/images/Artwork/IMG_77.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_78image" src="/images/Artwork/IMG_78.jpg" /></li>
 	    <li class="artwork_list"><img id="artwork_79image" src="/images/Artwork/IMG_79.jpg" /></li> -->
-	  </ul>
-	</div>
-</div>
