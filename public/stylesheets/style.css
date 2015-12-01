@@ -35,7 +35,7 @@ a {
 /* home template */
 #home_page {
   margin-top: 8px;
-  background: rgba(204, 204, 204, 0.7);
+  background: rgba(204, 204, 204, 0.8);
 }
 
 #home_container {
@@ -48,13 +48,16 @@ a {
 
 #home_p {
   color: blue;
+  text-shadow: 1px 1px 1px black;
   font-size: 44px;
   padding-top: 10px;
 }
 
 #home_name {
-  color: black;
+  color: white;
   font-size: 24px;
+  border-radius: 10px;
+  background-color: brown;
 }
 
 .home_input {
@@ -62,6 +65,11 @@ a {
   padding: 10px;
   font-size: 18px;
 }
+
+#home_hello, #home_enjoy, #sprite_move {
+  color: purple;
+}
+
 .home_input[type="submit"] {
   background: red;
   color: white;
@@ -75,7 +83,8 @@ a {
 /* about template */
 #about_page {
   margin-top: 8px;
-  background: rgba(204, 204, 204, 0.5);
+  background: rgba(204, 204, 204, 0.7);
+  color: black;
 }
 
 #about_fun_facts {
@@ -133,6 +142,11 @@ a {
 #artwork_page {
   margin-top: 8px;
   background: rgba(184, 122, 66, 1);
+}
+
+.sort_tags {
+  text-decoration: none !important;
+  font-size: 18px;
 }
 
 #artwork_ul {
@@ -220,7 +234,23 @@ a {
 /* Contact template */
 #contact_page {
   margin-top: 8px;
-  background: rgba(204, 204, 204, 0.5);
+  background: rgba(204, 204, 204, 0.8);
+}
+
+#contact_title {
+  color: brown;
+  text-shadow: 1px 1px 1px black;
+}
+
+.contact_body {
+  color: #680000;
+  font-weight: bold;
+  text-shadow: 0.7px 0.7px 0.7px #600000;
+}
+
+.contact_links {
+  color: blue;
+  font-weight: bold;
 }
 
 /* media definitions */
