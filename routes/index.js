@@ -29,7 +29,7 @@ router.post('/new_artwork', function(req,res,next){
 		for (i=1;i<80;i++) {
 			console.log(i);
 			var url = '/images/Artwork/IMG_'+i+".jpg";
-			Artwork.collection.insert({url: url, likes: 0, genre: "Pastel"});
+			Artwork.collection.insert({url: url, likes: 0, genre: "Pastel Work", comments: []});
 		}
 		res.redirect('/');
 	});
