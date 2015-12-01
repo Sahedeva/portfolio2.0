@@ -19,7 +19,7 @@ portfolioApp.config(function($routeProvider) {
 
         // route for the contact page
         .when('/contact', {
-            templateUrl : 'contact.ejs',
+            templateUrl : 'contact.html',
             controller  : 'contactController'
         })
 
@@ -31,7 +31,7 @@ portfolioApp.config(function($routeProvider) {
 
         // route for the artwork page
         .when('/artwork', {
-            templateUrl : 'artwork.ejs',
+            templateUrl : 'artwork.html',
             controller  : 'artworkController',
             resolve: {
                 postPromise: ['artworks', function(artworks){
@@ -113,34 +113,21 @@ portfolioApp.controller('contactController', function($scope) {
 portfolioApp.controller('artworkController', [
     '$scope',
     'artworks',
-    function($scope, artworks) { 
-    $scope.message = 'Artwork page';
+    '$filter',
+    function($scope, artworks, $filter) { 
     $scope.artworks = artworks.artworks;
+    var orderBy = $filter('orderBy');
+    $scope.order = function(predicate) {
+        $scope.artworks = orderBy($scope.artworks, predicate);
+    };
     $scope.incrementLikes = function(artwork) {
         artworks.like(artwork);
     };
-    // $scope.posts = [
-    //   {title: 'post 1', upvotes: 5},
-    //   {title: 'post 2', upvotes: 2},
-    //   {title: 'post 3', upvotes: 15},
-    //   {title: 'post 4', upvotes: 9},
-    //   {title: 'post 5', upvotes: 4}
-    // ];
-    // $('.clicker').on('submit', function(){
-    //     var post = $('#post_input').val();
-    //     console.log(post);
-    // })
-    // $scope.addPost = function() {
-    //     console.log($scope.title);
-    //     $scope.posts.push({title: $scope.title, upvotes: 0});
-    //     $scope.title = '';
-    // };
     $scope.addComment = function(artwork, new_comment){
         console.log("comment form entry is "+ new_comment);
         artwork.comments.push(new_comment);
         if(new_comment === '') { return; }
         artworks.addComment(artwork, new_comment);
-        $scope.new_comment = '';
     };
 }]);
 
