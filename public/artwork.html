@@ -1,4 +1,40 @@
 <div ng-controller="artworkController" id="artwork_page" class="jumbotron text-center">
+	<div class="container" id="artwork_container">
+	  <h2 id="artwork_p">"Live your life as a work of art" - Friedrich Nietzsche</h2>
+	  <a class="sort_tags" href="" ng-click="order('-likes')">Sort by Likes | </a>
+	  <a class="sort_tags" href="" ng-click="order('-genre')">Sort by Genre | </a>
+	  <a class="sort_tags" href="" ng-click="order(['-genre', '-likes'])">Sort by both</a>
+	  <ul class="list-inline" id="artwork_ul">
+	  	<span id="ng_div"><div id="ng_divy" ng-repeat="artwork in artworks"><span>
+	  		<div class="row">
+	  			<div class="col-xs-2 col-md-2 like_col">
+	  				<img class="like_button" ng-click="incrementLikes(artwork)" src="/images/like1.jpg"> {{artwork['likes']}}
+	  			</div>
+	  			<div class="col-xs-10 col-md-7 artwork_col">
+	          <li class="artwork_list"><div><h3 class="artwork_genre">{{artwork['genre']}}</h3><!-- <h4>{{artwork['url'].substring(20)}}</h4> --><img class="artwork_images" src="{{artwork['url']}}" /></div></li>
+          </div>
+          <div class="col-xs-6 col-md-3 comment_col">
+	          <h3 class="artwork_comments">Comments</h3>
+	          	<div class="comment_list" ng-repeat="comment in artwork.comments">
+	          		{{comment}}
+	          	</div>
+	          <div class="form-group">
+          		<form name="commentForm" ng-submit="addComment(artwork, new_comment)" class="comment_form">
+				      	<input type="text" class="form-control" placeholder="Comment" ng-model="new_comment"></input>
+				    		<button type="submit" class="btn btn-primary add_buttons"><img class="add_button" src="/images/add.png"></button>
+				  		</form>
+          	</div>
+    			</div>
+        </div>
+      </div>
+    </ul>
+	</div>
+</div>
+
+
+
+
+<!-- <div ng-controller="artworkController" id="artwork_page" class="jumbotron text-center">
 	<div id="artwork_container">
 	  <h2 id="artwork_p">"Live your life as a work of art" - Friedrich Nietzsche</h2>
 	  <a class="sort_tags" href="" ng-click="order('-likes')">Sort by Likes | </a>
@@ -11,7 +47,7 @@
 	  				<img class="like_button" ng-click="incrementLikes(artwork)" src="/images/like1.jpg"> {{artwork['likes']}}
 	  			</div>
 	  			<div class="artwork_col">
-	          <li class="artwork_list"><div><h3 class="artwork_genre">{{artwork['genre']}}</h3><!-- <h4>{{artwork['url'].substring(20)}}</h4> --><img class="artwork_images" src="{{artwork['url']}}" /></div></li>
+	          <li class="artwork_list"><div><h3 class="artwork_genre">{{artwork['genre']}}</h3><img class="artwork_images" src="{{artwork['url']}}" /></div></li>
           </div>
           <div class="comment_col">
 	          <h3 class="artwork_comments">Comments</h3>
@@ -29,4 +65,4 @@
       </div>
     </ul>
 	</div>
-</div>
+</div> -->

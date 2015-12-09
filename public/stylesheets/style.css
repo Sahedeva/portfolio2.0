@@ -25,6 +25,7 @@ a {
   position: fixed;
   border-radius: 20px;
   top: 0px;
+  z-index: 1;
 }
 
 #hero_img {
@@ -155,6 +156,7 @@ a {
 }
 
 .artwork_comments{
+  text-align: center;
   color: yellow;
   text-shadow: 1px 1px 1px black;
 }
@@ -176,7 +178,7 @@ a {
 }
 
 .like_col {
-  width: 25%;
+  /*width: 25%;*/
   margin-top: 200px;
   text-align: center;
   font-weight: bold;
@@ -185,13 +187,8 @@ a {
 }
 
 .artwork_col {
-  width: 50%;
+  /*width: 50%;*/
   text-align: center
-}
-
-.comment_col {
-  width: 25%;
-  margin-top: 75px;
 }
 
 .grid:after {
@@ -217,11 +214,15 @@ a {
 
 .comment_list {
   color: black;
-/*  text-shadow: 1px 1px 1px black;*/
   font-size: 18px;
 }
+
+.comment_form {
+  margin-top: 30px;
+}
+
 .add_buttons {
-  margin-left: 7%;
+  margin-left: 35%;
   margin-top: 5%;
 }
 
@@ -259,6 +260,18 @@ a {
     margin-right:4%;
   }
 
+  .comment_col {
+    margin-left: 31%;
+  }
+
+  .comment_form {
+    margin-left: 7%;
+  }
+
+  .comment_list {
+    margin-left: 7%;
+  }
+
   #contact_page, #home_page, #about_page, #projects_page, #artwork_page {
       width: 750px;
   }
@@ -269,6 +282,19 @@ a {
     margin-right:14%;
   }
 
+  .comment_col {
+    margin-top: 75px;
+    margin-left: 0px;
+  }
+
+  .comment_form {
+    margin-left: 0px;
+  }
+
+  .comment_list {
+    margin-left: 0px;
+  }
+
   #contact_page, #home_page, #about_page, #projects_page, #artwork_page {
       width: 970px;
   }
@@ -277,6 +303,19 @@ a {
 @media (min-width: 1190px) {
   #nav_saber {
     margin-right:21%;
+  }
+
+  .comment_col {
+    margin-top: 75px;
+    margin-left: 0px;
+  }
+
+  .comment_form {
+    margin-left: 0px;
+  }
+
+  .comment_list {
+    margin-left: 0px;
   }
 
   #contact_page, #home_page, #about_page, #projects_page, #artwork_page {
