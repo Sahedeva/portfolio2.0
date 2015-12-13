@@ -8,7 +8,7 @@
     <h3 id="home_enjoy">Please enjoy your stay on my website. Have a great day!</h3>
     </div>
     <div class="sprite right"></div>
-    <p id="sprite_move">Press the right and left arrow keys to move me</p>
+    <p id="sprite_move">Press the arrow keys to move me</p>
   </div>
 </div>
 
@@ -16,8 +16,10 @@
 (function() {
 
   var sprite = document.querySelector('.sprite'),
-    key = {left: false, right: false},
+    key = {left: false, right: false, up: false, down: false},
     trans = 0,
+    trav = 0,
+    dir = '',
     property = getTransformProperty(sprite);
 
   function getTransformProperty(element) {
@@ -38,15 +40,25 @@
   }
 
   function translate() {
-    sprite.style[property] = 'translateX(' + trans + 'px)';
+    sprite.style[property] = 'translate(' + trans + 'px, ' + trav + 'px)';
   }
+
+  // function travlate() {
+  //   sprite.style[property] = 'translateY(' + trav + 'px)';
+  // }
 
   function walk(e) {
     var keyCode = e.keyCode;
     if (keyCode === 39) {
       key.right = true;
+      dir = 'right'
     } else if (keyCode === 37) {
       key.left = true;
+      dir = 'left'
+    } else if (keyCode === 38) {
+      key.up = true;
+    } else if (keyCode === 40) {
+      key.down = true;
     }
     if (key.right === true) {
       trans += 10;
@@ -60,6 +72,30 @@
       sprite.classList.remove('right');
       sprite.classList.add('left');
       sprite.classList.add('walk-left');
+    } else if (key.up === true) {
+      trav -= 10;
+      translate();
+      if (dir === 'left') {
+      sprite.classList.remove('right');
+      sprite.classList.add('left');
+      sprite.classList.add('walk-left');
+      } else {
+        sprite.classList.remove('left');
+        sprite.classList.add('right');
+        sprite.classList.add('walk-right');
+      }
+    } else if (key.down === true) {
+      trav += 10;
+      translate();
+      if (dir === 'left') {
+      sprite.classList.remove('right');
+      sprite.classList.add('left');
+      sprite.classList.add('walk-left');
+      } else {
+        sprite.classList.remove('left');
+        sprite.classList.add('right');
+        sprite.classList.add('walk-right');
+      }
     }
   }
 
@@ -69,6 +105,10 @@
       key.right = false;
     } else if (keyCode === 37) {
       key.left = false;
+    } else if (keyCode === 38) {
+      key.up = false;
+    } else if (keyCode === 40) {
+      key.down = false;
     }
     if (key.right === false) {
       sprite.classList.remove('walk-right');
