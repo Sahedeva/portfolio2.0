@@ -99,7 +99,7 @@ a {
 
 #about_ul {
   text-align: left;
-  color:violet;
+  color:beige;
   text-shadow: 1px 1px 1px black;
   font-size: 20px;
 }
@@ -123,10 +123,22 @@ a {
   list-style-type: none;
 }
 
+.github_icon {
+  font-size: 30px;
+  color: black;
+  vertical-align: middle;
+}
+
+#meanstack {
+  height: 65px;
+}
+
 .project_screenshots {
   height: 200px;
   width: 365px;
   padding-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 9px -14px 0px rebeccapurple;
 }
 
 .projects_links {
