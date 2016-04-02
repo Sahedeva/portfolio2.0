@@ -21,6 +21,8 @@ console.log("  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |");
 console.log("  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |");
 console.log(" ");
 console.log("         consoleCat - by Bob   (MEOW)");
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+console.log(isChrome);
 // create the module and name it portfolioApp
 var portfolioApp = angular.module('portfolioApp', ['ngRoute']);
 

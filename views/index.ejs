@@ -13,6 +13,7 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+ <script type='text/javascript' src='path/to/ng-infinite-scroll.min.js'></script>
 <script src="/javascripts/script.js"></script>
 <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
@@ -28,7 +29,7 @@
             <li><a id="nav_home" href="#"><!-- <i class="fa fa-home"></i> -->Home</a></li>
             <li><a id="nav_about" href="#about"><!-- <i class="fa fa-shield"></i>  -->About Me</a></li>
             <li><a id="nav_projects" href="#projects">Projects</a></li>
-            <li><a id="nav_resume" href="images/resume_rev2.pdf" target="_blank">Resume</a></li>
+            <li><a id="nav_resume" href="images/RobertWeilbaecherResume.pdf" target="_new">Resume</a></li>
             <li><a id="nav_artwork" href="#artwork">Artwork</a></li>
             <li><a id="nav_contact" href="#contact"><!-- <i class="fa fa-comment"></i>  -->Contact</a></li>
             
@@ -47,5 +48,14 @@
         <!-- this is where content will be injected -->
         <div ng-view></div>
     </div>
+    <script type="text/javascript">
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
+        if (isChrome) {
+            $("#nav_resume").on('click', function(){
+                alert("Note: due to a bug for displaying pdf's in chrome - you have to right click the resume link and choose the 'Open Link in Incognito Window' option in order to view the resume pdf - I apologize for any inconvience");
+                return false;
+            });
+        }
+    </script>
 </body>
 </html>
